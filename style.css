@@ -1,0 +1,55 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Adds a border and height for the div's with the class of empty */
+.empty{
+  height: 437px;
+  width: 300px;
+  margin: 10px;
+  border: solid 3px black;
+  background: #fff;
+
+}
+
+/* Added the picture from unsplashed */
+.fill{
+  background-image: url("https://images.saymedia-content.com/.image/ar_3:2%2Cc_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MTc0NDYwNzk3Mzk2MzMwMTE4/10-more-underestimated-trap-cards-in-yu-gi-oh.png");
+  height: 432px;
+  
+  cursor: pointer;
+  background-size: cover;
+}
+
+
+/* adds a border when the image is being held */
+.hold{
+  border: solid 5px #ccc;
+}
+
+/* This will be applied in the JS */
+.hovered {
+  background-color: #333;
+  border-color: #fff;
+  border-style: dashed;
+}
+
+
+@media(max-width: 800px) {
+  body{
+    flex-direction: column;
+  }
+  
+}
